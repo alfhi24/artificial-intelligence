@@ -3,20 +3,20 @@ import matplotlib.pyplot as plt
 
 
 # Input data - [SAT Score, GPA]
-data = [[1590,2.9], [1540,2.7], [1600,2.6], [1590,2.7], [1520,2.5], [1540,2.4], [1560,2.3], [1490,2.3], [1510,2.4],
-     [1350,3.9], [1360,3.7], [1370,3.8], [1380,3.7], [1410,3.6], [1420,3.9], [1430,3.4], [1450,3.7], [1460,3.2],
-     [1590,3.9], [1540,3.7], [1600,3.6], [1490,3.7], [1520,3.5], [1540,3.4], [1560,3.3], [1460,3.3], [1510,3.4],
-     [1340,2.9], [1360,2.4], [1320,2.5], [1380,2.6], [1400,2.1], [1320,2.5], [1310,2.7], [1410,2.1], [1305,2.5],
-     [1460,2.7], [1500,2.9], [1300,3.5], [1320,3.6], [1400,2.7], [1300,3.1], [1350,3.1], [1360,2.9], [1305,3.9], 
-     [1430,3.0], [1440,2.3], [1440,2.5], [1380,2.1], [1430,2.1], [1400,2.5], [1420,2.3], [1310,2.1], [1350,2.0]]
+data = [[1360,2.4 ], [1540,2.7], [1600,2.6], [1400,2.5], [1520,2.5], [1380,2.1], [1420,2.3], [1490,2.3], [1510,2.4],
+     [1350,3.9], [1500,2.9], [1440,2.5], [1380,3.7], [1430,2.1], [1420,3.9], [1430,3.4], [1450,3.7], [1350,2.0],
+     [1430,3.0], [1540,3.7], [1370,3.8], [1490,3.7], [1520,3.5], [1300,3.1], [1360,2.9], [1460,3.3], [1510,3.4],
+     [1340,2.9], [1590,2.9], [1320,2.5], [1380,2.6], [1400,2.1], [1540,2.4], [1310,2.7], [1410,2.1], [1305,2.5],
+     [1460,2.7], [1360,3.7], [1300,3.5], [1320,3.6], [1400,2.7], [1540,3.4], [1350,3.1], [1560,3.3], [1305,3.9], 
+     [1590,3.9], [1440,2.3], [1600,3.6], [1320,2.5], [1410,3.6], [1590,2.7], [1560,2.3], [1310,2.1], [1460,3.2]]
 
 # Labels - Accepted or Rejected
-label = ['accepted','accepted','accepted','accepted','accepted','accepted','accepted','accepted','accepted',
-     'accepted','accepted','accepted','accepted','accepted','accepted','accepted','accepted','accepted',
-     'accepted','accepted','accepted','accepted','accepted','accepted','accepted','accepted','accepted',
-     'rejected','rejected','rejected','rejected','rejected','rejected','rejected','rejected','rejected',
-     'rejected','rejected','rejected','rejected','rejected','rejected','rejected','rejected','rejected',
-     'rejected','rejected','rejected','rejected','rejected','rejected','rejected','rejected','rejected']
+label = ['rejected','accepted','accepted','rejected','accepted','rejected','rejected','accepted','accepted',
+     'accepted','rejected','rejected','accepted','rejected','accepted','accepted','accepted','rejected',
+     'rejected','accepted','rejected','accepted','accepted','rejected','rejected','accepted','accepted',
+     'rejected','accepted','rejected','rejected','rejected','accepted','rejected','rejected','rejected',
+     'rejected','accepted','accepted','rejected','rejected','accepted','rejected','accepted','rejected',
+     'accepted','rejected','accepted','rejected','accepted','accepted','accepted','rejected','accepted']
 
 
 for i in range(len(data)):
