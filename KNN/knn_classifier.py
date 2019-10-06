@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 # Input data - [SAT Score, GPA]
@@ -18,12 +19,25 @@ label = ['rejected','accepted','accepted','rejected','accepted','rejected','reje
      'rejected','accepted','accepted','rejected','rejected','accepted','rejected','accepted','rejected',
      'accepted','rejected','accepted','rejected','accepted','accepted','accepted','rejected','accepted']
 
+datas = pd.DataFrame()
+datas['data'] = data
+datas['label'] = label
+# print(datas)
+
+datas_copy = datas.copy()
+data_train = datas_copy.sample(frac=0.70, random_state=0)
+data_test = datas_copy.drop(data_train.index)
+print ('Data Training')
+print (data_train)
+print ('\nData Test')
+print (data_test)
+
 
 for i in range(len(data)):
     if label[i] == 'accepted':
-        plt.scatter(data[i][0], data[i][1], linewidths = 5, color='red')
+        plt.scatter(data[i][0], data[i][1], linewidths = 2, color='red')
     else:
-        plt.scatter(data[i][0], data[i][1], linewidths = 5, color='blue')
+        plt.scatter(data[i][0], data[i][1], linewidths = 2, color='blue')
         
 plt.plot()
 plt.show()
